@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>dmc</string>
+		<string>DMC</string>
+	</array>
+	<key>name</key>
+	<string>Galil DMC</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\'.*$</string>
+			<key>name</key>
+			<string>comment.galildmc</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Commands A-J</string>
+			<key>match</key>
+			<string>(;|^| )(?i)(a[bcdfgilmopqrstuvw]|b[abcdgiklmnopqrstvwxz]|c[abcdefimnorsw]|d[acefhlmprtv]|e[abcdgimnopqrstwy]|f[aeilv]|g[admr]|h[msvx]|i[adhiiklnpt]|j[gps])</string>
+			<key>name</key>
+			<string>keyword.control.galildmc</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Commands K-P</string>
+			<key>match</key>
+			<string>(;|^)(?i)(k[dips]|l[abcdeilmsuvz]|m[bfgortw]|n[bfoz]|o[abcefptv]|p[aflrtvw])</string>
+			<key>name</key>
+			<string>keyword.control.galildmc</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Commands Q-V</string>
+			<key>match</key>
+			<string>(;|^)(?i)(q[dhrsuz]|r[acdeilps]|s[abcdhil]|t[abcdehiklmnprstvwz]|u[il]|v[adefmprsv])</string>
+			<key>name</key>
+			<string>keyword.control.galildmc</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Commands W-Z</string>
+			<key>match</key>
+			<string>(;|^)(?i)(w[ht]|xq|y[abcrs]|z[as])</string>
+			<key>name</key>
+			<string>keyword.control.galildmc</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Commands</string>
+			<key>match</key>
+			<string>(?i)(else|endif|end|if|p2cd|p2ch|p2nm|p2st|rem|time)</string>
+			<key>name</key>
+			<string>keyword.control.galildmc</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Labels</string>
+			<key>match</key>
+			<string>#[A-Za-z0-9]{2,8}</string>
+			<key>name</key>
+			<string>entity.name.function.label.galildmc</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Numeric Values</string>
+			<key>match</key>
+			<string>[^#][0-9]*</string>
+			<key>name</key>
+			<string>constant.numeric.galildmc</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.galildmc</string>
+	<key>uuid</key>
+	<string>d9658f70-bbc5-11e3-a5e2-0800200c9a66</string>
+</dict>
+</plist>

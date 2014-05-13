@@ -1,0 +1,59 @@
+{
+  /**
+   * Made by Justin Watson on 2014.04.03 ST3 build 3059
+   * 
+   * This is syntax higlighting for Galil DMC.
+   *
+   * Important links on how to make this file are....
+   * (http://docs.sublimetext.info/en/latest/extensibility/syntaxdefs.html)
+   * (http://manual.macromates.com/en/language_grammars#language_grammars)
+   * I haven't yet figured out how to add the sytax to the list that is brought
+   * up when the bottom right button is pressed.
+   */
+  "name": "Galil DMC",
+  "scopeName": "source.galildmc",
+  "fileTypes": ["dmc", "DMC"],
+  "patterns": [
+    {
+      "match": "\\'.*$",
+      "name": "comment.galildmc"
+    },
+    {
+      "match": "(;|^| )(?i)(a[bcdfgilmopqrstuvw]|b[abcdgiklmnopqrstvwxz]|c[abcdefimnorsw]|d[acefhlmprtv]|e[abcdgimnopqrstwy]|f[aeilv]|g[admr]|h[msvx]|i[adhiiklnpt]|j[gps])",
+      "name": "keyword.control.galildmc", 
+      "comment": "Commands A-J"
+    },
+    {
+      "match": "(;|^)(?i)(k[dips]|l[abcdeilmsuvz]|m[bfgortw]|n[bfoz]|o[abcefptv]|p[aflrtvw])",
+      "name": "keyword.control.galildmc", 
+      "comment": "Commands K-P"
+    },
+    {
+      "match": "(;|^)(?i)(q[dhrsuz]|r[acdeilps]|s[abcdhil]|t[abcdehiklmnprstvwz]|u[il]|v[adefmprsv])",
+      "name": "keyword.control.galildmc", 
+      "comment": "Commands Q-V"
+    },
+    {
+      "match": "(;|^)(?i)(w[ht]|xq|y[abcrs]|z[as])",
+      "name": "keyword.control.galildmc", 
+      "comment": "Commands W-Z"
+    },
+    {
+      "match": "(?i)(else|endif|end|if|p2cd|p2ch|p2nm|p2st|rem|time)",
+      "name": "keyword.control.galildmc", 
+      "comment": "Control Commands"
+    },
+    {
+      "match": "#[A-Za-z0-9]{2,8}",
+      // These need to be the same color as class method/function names. This will make them stand out.
+      "name": "entity.name.function.label.galildmc",
+      "comment": "Labels"
+    },
+    {
+      "match": "[^#][0-9]*",
+      "name": "constant.numeric.galildmc",
+      "comment": "Numeric Values"
+    }
+  ],
+  "uuid": "d9658f70-bbc5-11e3-a5e2-0800200c9a66"
+}
