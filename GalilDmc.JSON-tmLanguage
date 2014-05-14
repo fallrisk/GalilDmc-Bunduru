@@ -19,22 +19,26 @@
       "name": "comment.galildmc"
     },
     {
+      "match": "\"[^\"]*\"",
+      "name": "string.quoted.single.galildmc"
+    },
+    {
       "match": "(;|^| )(?i)(a[bcdfgilmopqrstuvw]|b[abcdgiklmnopqrstvwxz]|c[abcdefimnorsw]|d[acefhlmprtv]|e[abcdgimnopqrstwy]|f[aeilv]|g[admr]|h[msvx]|i[adhiiklnpt]|j[gps])",
       "name": "keyword.control.galildmc", 
       "comment": "Commands A-J"
     },
     {
-      "match": "(;|^)(?i)(k[dips]|l[abcdeilmsuvz]|m[bfgortw]|n[bfoz]|o[abcefptv]|p[aflrtvw])",
+      "match": "(;|^| )(?i)(k[dips]|l[abcdeilmsuvz]|m[bfgortw]|n[bfoz]|o[abcefptv]|p[aflrtvw])",
       "name": "keyword.control.galildmc", 
       "comment": "Commands K-P"
     },
     {
-      "match": "(;|^)(?i)(q[dhrsuz]|r[acdeilps]|s[abcdhil]|t[abcdehiklmnprstvwz]|u[il]|v[adefmprsv])",
+      "match": "(;|^| )(?i)(q[dhrsuz]|r[acdeilps]|s[abcdhil]|t[abcdehiklmnprstvwz]|u[il]|v[adefmprsv])",
       "name": "keyword.control.galildmc", 
       "comment": "Commands Q-V"
     },
     {
-      "match": "(;|^)(?i)(w[ht]|xq|y[abcrs]|z[as])",
+      "match": "(;|^| )(?i)(w[ht]|xq|y[abcrs]|z[as])",
       "name": "keyword.control.galildmc", 
       "comment": "Commands W-Z"
     },

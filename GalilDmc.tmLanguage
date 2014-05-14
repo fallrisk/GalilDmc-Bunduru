@@ -18,6 +18,12 @@
 			<string>comment.galildmc</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>"[^"]*"</string>
+			<key>name</key>
+			<string>string.quoted.single.galildmc</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>Commands A-J</string>
 			<key>match</key>
@@ -29,7 +35,7 @@
 			<key>comment</key>
 			<string>Commands K-P</string>
 			<key>match</key>
-			<string>(;|^)(?i)(k[dips]|l[abcdeilmsuvz]|m[bfgortw]|n[bfoz]|o[abcefptv]|p[aflrtvw])</string>
+			<string>(;|^| )(?i)(k[dips]|l[abcdeilmsuvz]|m[bfgortw]|n[bfoz]|o[abcefptv]|p[aflrtvw])</string>
 			<key>name</key>
 			<string>keyword.control.galildmc</string>
 		</dict>
@@ -37,7 +43,7 @@
 			<key>comment</key>
 			<string>Commands Q-V</string>
 			<key>match</key>
-			<string>(;|^)(?i)(q[dhrsuz]|r[acdeilps]|s[abcdhil]|t[abcdehiklmnprstvwz]|u[il]|v[adefmprsv])</string>
+			<string>(;|^| )(?i)(q[dhrsuz]|r[acdeilps]|s[abcdhil]|t[abcdehiklmnprstvwz]|u[il]|v[adefmprsv])</string>
 			<key>name</key>
 			<string>keyword.control.galildmc</string>
 		</dict>
@@ -45,13 +51,13 @@
 			<key>comment</key>
 			<string>Commands W-Z</string>
 			<key>match</key>
-			<string>(;|^)(?i)(w[ht]|xq|y[abcrs]|z[as])</string>
+			<string>(;|^| )(?i)(w[ht]|xq|y[abcrs]|z[as])</string>
 			<key>name</key>
 			<string>keyword.control.galildmc</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Commands</string>
+			<string>Control Commands</string>
 			<key>match</key>
 			<string>(?i)(else|endif|end|if|p2cd|p2ch|p2nm|p2st|rem|time)</string>
 			<key>name</key>
