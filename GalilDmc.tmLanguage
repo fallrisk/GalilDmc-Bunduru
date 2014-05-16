@@ -26,6 +26,14 @@
 			<string>comment.galildmc</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>Built in variables</string>
+			<key>match</key>
+			<string>_[A-Z]{2}[A-Z0-9]</string>
+			<key>name</key>
+			<string>storage.type.galildmc</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>"[^"]*"</string>
 			<key>name</key>
@@ -83,7 +91,7 @@
 			<key>comment</key>
 			<string>Numeric Values</string>
 			<key>match</key>
-			<string>[^#][0-9A-F]+</string>
+			<string>\$*[0-9A-F]+</string>
 			<key>name</key>
 			<string>constant.numeric.galildmc</string>
 		</dict>

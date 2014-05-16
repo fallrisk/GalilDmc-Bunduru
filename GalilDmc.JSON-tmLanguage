@@ -24,6 +24,11 @@
       "comment": "REM comment"
     },
     {
+      "match": "_[A-Z]{2}[A-Z0-9]",
+      "name": "storage.type.galildmc",
+      "comment": "Built in variables"
+    },
+    {
       "match": "\"[^\"]*\"",
       "name": "string.quoted.single.galildmc"
     },
@@ -59,7 +64,7 @@
       "comment": "Labels"
     },
     {
-      "match": "[^#][0-9A-F]+",
+      "match": "\\$*[0-9A-F]+",
       "name": "constant.numeric.galildmc",
       "comment": "Numeric Values"
     }
