@@ -18,6 +18,14 @@
 			<string>comment.galildmc</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>REM comment</string>
+			<key>match</key>
+			<string>^REM.*$</string>
+			<key>name</key>
+			<string>comment.galildmc</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>"[^"]*"</string>
 			<key>name</key>

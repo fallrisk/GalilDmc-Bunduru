@@ -19,6 +19,11 @@
       "name": "comment.galildmc"
     },
     {
+      "match": "^REM.*$",
+      "name": "comment.galildmc",
+      "comment": "REM comment"
+    },
+    {
       "match": "\"[^\"]*\"",
       "name": "string.quoted.single.galildmc"
     },
