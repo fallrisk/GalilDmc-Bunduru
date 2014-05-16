@@ -23,27 +23,27 @@
       "name": "string.quoted.single.galildmc"
     },
     {
-      "match": "(;|^| )(?i)(a[bcdfgilmopqrstuvw]|b[abcdgiklmnopqrstvwxz]|c[abcdefimnorsw]|d[acefhlmprtv]|e[abcdgimnopqrstwy]|f[aeilv]|g[admr]|h[msvx]|i[adhiiklnpt]|j[gps])",
+      "match": "(;|^| )(A[BCDFGILMOPQRSTUVW]|B[ABCDGIKLMNOPQRSTVWXZ]|C[ABCDEFIMNORSW]|D[ACEFHLMPRTV]|E[ABCDGIMNOPQRSTWY]|F[AEILV]|G[ADMR]|H[MSVX]|I[ADHIIKLNPT]|J[GPS])",
       "name": "keyword.control.galildmc", 
       "comment": "Commands A-J"
     },
     {
-      "match": "(;|^| )(?i)(k[dips]|l[abcdeilmsuvz]|m[bfgortw]|n[bfoz]|o[abcefptv]|p[aflrtvw])",
+      "match": "(;|^| )(K[DIPS]|L[ABCDEILMSUVZ]|M[BFGORTW]|N[BFOZ]|O[ABCEFPTV]|P[AFLRTVW])",
       "name": "keyword.control.galildmc", 
       "comment": "Commands K-P"
     },
     {
-      "match": "(;|^| )(?i)(q[dhrsuz]|r[acdeilps]|s[abcdhil]|t[abcdehiklmnprstvwz]|u[il]|v[adefmprsv])",
+      "match": "(;|^| )(Q[DHRSUZ]|R[ACDEILPS]|S[ABCDHIL]|T[ABCDEHIKLMNPRSTVWZ]|U[IL]|V[ADEFMPRSV])",
       "name": "keyword.control.galildmc", 
       "comment": "Commands Q-V"
     },
     {
-      "match": "(;|^| )(?i)(w[ht]|xq|y[abcrs]|z[as])",
+      "match": "(;|^| )(W[BHT]|XQ|Y[ABCRS]|Z[AS])",
       "name": "keyword.control.galildmc", 
       "comment": "Commands W-Z"
     },
     {
-      "match": "(?i)(else|endif|end|if|p2cd|p2ch|p2nm|p2st|rem|time)",
+      "match": "(ELSE|ENDIF|END|IF|P2CD|P2CH|P2NM|P2ST|REM|TIME)",
       "name": "keyword.control.galildmc", 
       "comment": "Control Commands"
     },
@@ -54,7 +54,7 @@
       "comment": "Labels"
     },
     {
-      "match": "[^#][0-9]*",
+      "match": "[^#][0-9A-F]+",
       "name": "constant.numeric.galildmc",
       "comment": "Numeric Values"
     }

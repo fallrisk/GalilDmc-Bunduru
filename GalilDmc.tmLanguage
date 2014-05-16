@@ -27,7 +27,7 @@
 			<key>comment</key>
 			<string>Commands A-J</string>
 			<key>match</key>
-			<string>(;|^| )(?i)(a[bcdfgilmopqrstuvw]|b[abcdgiklmnopqrstvwxz]|c[abcdefimnorsw]|d[acefhlmprtv]|e[abcdgimnopqrstwy]|f[aeilv]|g[admr]|h[msvx]|i[adhiiklnpt]|j[gps])</string>
+			<string>(;|^| )(A[BCDFGILMOPQRSTUVW]|B[ABCDGIKLMNOPQRSTVWXZ]|C[ABCDEFIMNORSW]|D[ACEFHLMPRTV]|E[ABCDGIMNOPQRSTWY]|F[AEILV]|G[ADMR]|H[MSVX]|I[ADHIIKLNPT]|J[GPS])</string>
 			<key>name</key>
 			<string>keyword.control.galildmc</string>
 		</dict>
@@ -35,7 +35,7 @@
 			<key>comment</key>
 			<string>Commands K-P</string>
 			<key>match</key>
-			<string>(;|^| )(?i)(k[dips]|l[abcdeilmsuvz]|m[bfgortw]|n[bfoz]|o[abcefptv]|p[aflrtvw])</string>
+			<string>(;|^| )(K[DIPS]|L[ABCDEILMSUVZ]|M[BFGORTW]|N[BFOZ]|O[ABCEFPTV]|P[AFLRTVW])</string>
 			<key>name</key>
 			<string>keyword.control.galildmc</string>
 		</dict>
@@ -43,7 +43,7 @@
 			<key>comment</key>
 			<string>Commands Q-V</string>
 			<key>match</key>
-			<string>(;|^| )(?i)(q[dhrsuz]|r[acdeilps]|s[abcdhil]|t[abcdehiklmnprstvwz]|u[il]|v[adefmprsv])</string>
+			<string>(;|^| )(Q[DHRSUZ]|R[ACDEILPS]|S[ABCDHIL]|T[ABCDEHIKLMNPRSTVWZ]|U[IL]|V[ADEFMPRSV])</string>
 			<key>name</key>
 			<string>keyword.control.galildmc</string>
 		</dict>
@@ -51,7 +51,7 @@
 			<key>comment</key>
 			<string>Commands W-Z</string>
 			<key>match</key>
-			<string>(;|^| )(?i)(w[ht]|xq|y[abcrs]|z[as])</string>
+			<string>(;|^| )(W[BHT]|XQ|Y[ABCRS]|Z[AS])</string>
 			<key>name</key>
 			<string>keyword.control.galildmc</string>
 		</dict>
@@ -59,7 +59,7 @@
 			<key>comment</key>
 			<string>Control Commands</string>
 			<key>match</key>
-			<string>(?i)(else|endif|end|if|p2cd|p2ch|p2nm|p2st|rem|time)</string>
+			<string>(ELSE|ENDIF|END|IF|P2CD|P2CH|P2NM|P2ST|REM|TIME)</string>
 			<key>name</key>
 			<string>keyword.control.galildmc</string>
 		</dict>
@@ -75,7 +75,7 @@
 			<key>comment</key>
 			<string>Numeric Values</string>
 			<key>match</key>
-			<string>[^#][0-9]*</string>
+			<string>[^#][0-9A-F]+</string>
 			<key>name</key>
 			<string>constant.numeric.galildmc</string>
 		</dict>
