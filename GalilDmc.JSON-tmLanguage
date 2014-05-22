@@ -37,7 +37,9 @@
       "comment": "Built in variables"
     },
     {
-      // Add the @ABS and such to this.
+      "match": "@(ABS|ACOS|AN|ASIN|ATAN|COM|FLOT|FRAC|IN|INT|OUT|REAL|RND|SIN|SQR|TAN)",
+      "name": "keyword.control.galildmc",
+      "comment": "Special Built in Functions"
     },
     {
       "match": "(ELSE|ENDIF|END|IF|P2CD|P2CH|P2NM|P2ST|REM|TIME)",

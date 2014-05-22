@@ -39,7 +39,14 @@
 			<key>name</key>
 			<string>storage.type.galildmc</string>
 		</dict>
-		<dict/>
+		<dict>
+			<key>comment</key>
+			<string>Special Built in Functions</string>
+			<key>match</key>
+			<string>@(ABS|ACOS|AN|ASIN|ATAN|COM|FLOT|FRAC|IN|INT|OUT|REAL|RND|SIN|SQR|TAN)</string>
+			<key>name</key>
+			<string>keyword.control.galildmc</string>
+		</dict>
 		<dict>
 			<key>comment</key>
 			<string>Control Commands</string>
