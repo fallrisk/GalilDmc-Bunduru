@@ -9,6 +9,10 @@
    * (http://manual.macromates.com/en/language_grammars#language_grammars)
    * I haven't yet figured out how to add the sytax to the list that is brought
    * up when the bottom right button is pressed.
+   * 
+   * Order your matches from most specific to less specific. e.g. match ENDIF
+   * before EN in the file. Otherwise you will end up with EN the right color
+   * but not the D.
    */
   "name": "Galil DMC",
   "scopeName": "source.galildmc",
@@ -24,33 +28,16 @@
       "comment": "REM comment"
     },
     {
-      "match": "_[A-Z]{2}[A-Z0-9]",
-      "name": "storage.type.galildmc",
-      "comment": "Built in variables"
-    },
-    {
       "match": "\"[^\"]*\"",
       "name": "string.quoted.single.galildmc"
     },
     {
-      "match": "(;|^| )(A[BCDFGILMOPQRSTUVW]|B[ABCDGIKLMNOPQRSTVWXZ]|C[ABCDEFIMNORSW]|D[ACEFHLMPRTV]|E[ABCDGIMNOPQRSTWY]|F[AEILV]|G[ADMR]|H[MSVX]|I[ADHIIKLNPT]|J[GPS])",
-      "name": "keyword.control.galildmc", 
-      "comment": "Commands A-J"
+      "match": "_[A-Z0-9]+",
+      "name": "storage.type.galildmc",
+      "comment": "Built in variables"
     },
     {
-      "match": "(;|^| )(K[DIPS]|L[ABCDEILMSUVZ]|M[BFGORTW]|N[BFOZ]|O[ABCEFPTV]|P[AFLRTVW])",
-      "name": "keyword.control.galildmc", 
-      "comment": "Commands K-P"
-    },
-    {
-      "match": "(;|^| )(Q[DHRSUZ]|R[ACDEILPS]|S[ABCDHIL]|T[ABCDEHIKLMNPRSTVWZ]|U[IL]|V[ADEFMPRSV])",
-      "name": "keyword.control.galildmc", 
-      "comment": "Commands Q-V"
-    },
-    {
-      "match": "(;|^| )(W[BHT]|XQ|Y[ABCRS]|Z[AS])",
-      "name": "keyword.control.galildmc", 
-      "comment": "Commands W-Z"
+      // Add the @ABS and such to this.
     },
     {
       "match": "(ELSE|ENDIF|END|IF|P2CD|P2CH|P2NM|P2ST|REM|TIME)",
@@ -58,7 +45,27 @@
       "comment": "Control Commands"
     },
     {
-      "match": "#[A-Za-z0-9]{2,8}",
+      "match": "(A[BCDFGILMOPQRSTUVW]|B[ABCDGIKLMNOPQRSTVWXZ]|C[ABCDEFIMNORSW]|D[ACEFHLMPRTV]|E[ABCDGIMNOPQRSTWY]|F[AEILV]|G[ADMR]|H[MSVX]|I[ADHIIKLNPT]|J[GPS])",
+      "name": "keyword.control.galildmc", 
+      "comment": "Commands A-J"
+    },
+    {
+      "match": "(K[DIPS]|K[123]|L[ABCDEILMSUVZ]|M[BFGORTW]|N[BFOZ]|O[ABCEFPTV]|P[AFLRTVW])",
+      "name": "keyword.control.galildmc", 
+      "comment": "Commands K-P"
+    },
+    {
+      "match": "(Q[DHRSUZ]|R[ACDEILPS]|S[ABCDHILT]|T[ABCDEHIKLMNPRSTVWZ]|U[IL]|V[ADEFMPRSV])",
+      "name": "keyword.control.galildmc", 
+      "comment": "Commands Q-V"
+    },
+    {
+      "match": "(W[BHT]|XQ|Y[ABCRS]|Z[ASNPD])",
+      "name": "keyword.control.galildmc", 
+      "comment": "Commands W-Z"
+    },
+    {
+      "match": "#[A-Za-z0-9_]{2,8}",
       // These need to be the same color as class method/function names. This will make them stand out.
       "name": "entity.name.function.label.galildmc",
       "comment": "Labels"

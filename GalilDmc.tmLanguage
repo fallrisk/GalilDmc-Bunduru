@@ -26,14 +26,6 @@
 			<string>comment.galildmc</string>
 		</dict>
 		<dict>
-			<key>comment</key>
-			<string>Built in variables</string>
-			<key>match</key>
-			<string>_[A-Z]{2}[A-Z0-9]</string>
-			<key>name</key>
-			<string>storage.type.galildmc</string>
-		</dict>
-		<dict>
 			<key>match</key>
 			<string>"[^"]*"</string>
 			<key>name</key>
@@ -41,36 +33,13 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Commands A-J</string>
+			<string>Built in variables</string>
 			<key>match</key>
-			<string>(;|^| )(A[BCDFGILMOPQRSTUVW]|B[ABCDGIKLMNOPQRSTVWXZ]|C[ABCDEFIMNORSW]|D[ACEFHLMPRTV]|E[ABCDGIMNOPQRSTWY]|F[AEILV]|G[ADMR]|H[MSVX]|I[ADHIIKLNPT]|J[GPS])</string>
+			<string>_[A-Z0-9]+</string>
 			<key>name</key>
-			<string>keyword.control.galildmc</string>
+			<string>storage.type.galildmc</string>
 		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Commands K-P</string>
-			<key>match</key>
-			<string>(;|^| )(K[DIPS]|L[ABCDEILMSUVZ]|M[BFGORTW]|N[BFOZ]|O[ABCEFPTV]|P[AFLRTVW])</string>
-			<key>name</key>
-			<string>keyword.control.galildmc</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Commands Q-V</string>
-			<key>match</key>
-			<string>(;|^| )(Q[DHRSUZ]|R[ACDEILPS]|S[ABCDHIL]|T[ABCDEHIKLMNPRSTVWZ]|U[IL]|V[ADEFMPRSV])</string>
-			<key>name</key>
-			<string>keyword.control.galildmc</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Commands W-Z</string>
-			<key>match</key>
-			<string>(;|^| )(W[BHT]|XQ|Y[ABCRS]|Z[AS])</string>
-			<key>name</key>
-			<string>keyword.control.galildmc</string>
-		</dict>
+		<dict/>
 		<dict>
 			<key>comment</key>
 			<string>Control Commands</string>
@@ -81,9 +50,41 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>Commands A-J</string>
+			<key>match</key>
+			<string>(A[BCDFGILMOPQRSTUVW]|B[ABCDGIKLMNOPQRSTVWXZ]|C[ABCDEFIMNORSW]|D[ACEFHLMPRTV]|E[ABCDGIMNOPQRSTWY]|F[AEILV]|G[ADMR]|H[MSVX]|I[ADHIIKLNPT]|J[GPS])</string>
+			<key>name</key>
+			<string>keyword.control.galildmc</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Commands K-P</string>
+			<key>match</key>
+			<string>(K[DIPS]|K[123]|L[ABCDEILMSUVZ]|M[BFGORTW]|N[BFOZ]|O[ABCEFPTV]|P[AFLRTVW])</string>
+			<key>name</key>
+			<string>keyword.control.galildmc</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Commands Q-V</string>
+			<key>match</key>
+			<string>(Q[DHRSUZ]|R[ACDEILPS]|S[ABCDHILT]|T[ABCDEHIKLMNPRSTVWZ]|U[IL]|V[ADEFMPRSV])</string>
+			<key>name</key>
+			<string>keyword.control.galildmc</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Commands W-Z</string>
+			<key>match</key>
+			<string>(W[BHT]|XQ|Y[ABCRS]|Z[ASNPD])</string>
+			<key>name</key>
+			<string>keyword.control.galildmc</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Labels</string>
 			<key>match</key>
-			<string>#[A-Za-z0-9]{2,8}</string>
+			<string>#[A-Za-z0-9_]{2,8}</string>
 			<key>name</key>
 			<string>entity.name.function.label.galildmc</string>
 		</dict>
