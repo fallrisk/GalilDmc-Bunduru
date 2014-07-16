@@ -1,0 +1,17 @@
+{
+  "name": "Comments",
+  "scope": "source.galildmc",
+  "settings": {
+    "shellVariables": [
+      {
+        "name": "TM_COMMENT_START",
+        "value": "' "
+      },
+      {
+        "name": "TM_COMMENT_DISABLE_INDENT",
+        "value": "no"
+      }
+    ]
+  },
+  "uuid": "3ca0bd8d-faaf-42f2-840c-795871c9ee7b"
+}
